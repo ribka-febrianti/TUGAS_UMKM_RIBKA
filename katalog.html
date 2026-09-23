@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Katalog Produk — UMKM Ribka</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Lanjutkan ke konten</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Beranda</a>
+          <a href="#produk">Produk</a>
+          <a href="index.html#kontak">Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <div class="container">
+        <h2 id="produk">Katalog Produk</h2>
+
+        <p>
+          Berikut tabel ringkasan produk kami. Klik pada nama produk untuk
+          melihat detail singkat.
+        </p>
+
+        <table class="product-table" aria-describedby="table-desc">
+          <caption id="table-desc">
+            Tabel daftar produk UMKM Ribka
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">No</th>
+              <th scope="col">Produk</th>
+              <th scope="col">Kategori</th>
+              <th scope="col">Harga</th>
+              <th scope="col">Stok</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><a href="#p1">Kerajinan Anyaman</a></td>
+              <td>Kerajinan</td>
+              <td>Rp 75.000</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><a href="#p2">Selai Buah Premium</a></td>
+              <td>Makanan</td>
+              <td>Rp 45.000</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><a href="#p3">Keripik Singkong Pedas</a></td>
+              <td>Makanan</td>
+              <td>Rp 20.000</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><a href="#p4">Lilin Aromaterapi</a></td>
+              <td>Rumah</td>
+              <td>Rp 35.000</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><a href="#p5">Sarung Tangan Tenun</a></td>
+              <td>Pakaian</td>
+              <td>Rp 55.000</td>
+              <td>15</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <section aria-labelledby="details-heading">
+          <h3 id="details-heading">Preview Produk</h3>
+
+          <article id="p1" class="card">
+            <img
+              src="https://via.placeholder.com/400x260.png?text=Kerajinan+Anyaman"
+              alt="Kerajinan anyaman rotan"
+            />
+            <h4>Kerajinan Anyaman</h4>
+            <p>
+              Anyaman tangan dari rotan lokal, produksi terbatas setiap minggu.
+            </p>
+            <p class="price">Rp 75.000</p>
+          </article>
+
+          <article id="p2" class="card">
+            <img
+              src="https://via.placeholder.com/400x260.png?text=Selai+Buah"
+              alt="Stoples selai buah premium"
+            />
+            <h4>Selai Buah Premium</h4>
+            <p>Tanpa pengawet, pilihan rasa: stroberi, mangga, nanas.</p>
+            <p class="price">Rp 45.000</p>
+          </article>
+
+          <article id="p3" class="card">
+            <img
+              src="https://via.placeholder.com/400x260.png?text=Keripik+Singkong"
+              alt="Paket keripik singkong pedas"
+            />
+            <h4>Keripik Singkong Pedas</h4>
+            <p>Pedas sedang, dikemas vakum untuk menjaga kerenyahan.</p>
+            <p class="price">Rp 20.000</p>
+          </article>
+
+          <article id="p4" class="card">
+            <img
+              src="https://via.placeholder.com/400x260.png?text=Lilin+Aroma"
+              alt="Lilin aromaterapi dalam gelas"
+            />
+            <h4>Lilin Aromaterapi</h4>
+            <p>Wangi lavender, bahan wax alami.</p>
+            <p class="price">Rp 35.000</p>
+          </article>
+
+          <article id="p5" class="card">
+            <img
+              src="https://via.placeholder.com/400x260.png?text=Sarung+Tangan"
+              alt="Sarung tangan tenun tradisional"
+            />
+            <h4>Sarung Tangan Tenun</h4>
+            <p>Tenunan tangan, motif lokal, ukuran all-size.</p>
+            <p class="price">Rp 55.000</p>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> UMKM Ribka</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
